@@ -32,9 +32,9 @@ print("Polynomial SVM: ",results["Polynomial"])
 print("RBF SVM: ",results["RBF"])
 print("\n")
 print("COMPARISON")
-if results["Linear"] > results["Polynomial"] and results["RBF"]:
-  print("Linear SVM has highest accuracy")
-elif results["Polynomial"] > results["Linear"] and results["RBF"]:
-  print("Polynomial SVM has highest accuracy")
+if results["Linear"] > results["Polynomial"] and results["Linear"] > results["RBF"]:
+    print("Linear SVM has highest accuracy")
+elif results["Polynomial"] > results["Linear"] and results["Polynomial"] > results["RBF"]:
+    print("Polynomial SVM has highest accuracy")
 else:
-  print("RBF SVM has highest accuracy")
+    print("RBF SVM has highest accuracy")

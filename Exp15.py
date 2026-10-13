@@ -1,4 +1,12 @@
-# EXP15: FASHION-MNIST COMPARISON BETWEEN LEARNING_RATES, BATCH_SIZE, EPOCHS
+'''Implement and perform hyperparameter tuning for a neural network on the Fashion 
+MNIST dataset. Experiment with different learning rates, batch sizes, and epochs, and 
+discuss the impact on model performance. 
+Tasks: 
+● Load and preprocess the Fashion MNIST dataset. 
+● Experiment with different hyperparameters (learning rate, batch size, epochs). 
+● Train and evaluate the network. 
+● Discuss how hyperparameter choices affect model performance.
+'''
 
 from sklearn.datasets import fetch_openml
 data = fetch_openml('Fashion-MNIST', version = 1, as_frame = False)

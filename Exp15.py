@@ -5,9 +5,9 @@ data = fetch_openml('Fashion-MNIST', version = 1, as_frame = False)
 X = data.data
 y = data.target.astype(int)
 
-#print(X.shape[0])
-#print(X.shape[1])
-#print(data.feature_names)
+print(X.shape[0])
+print(X.shape[1])
+print(data.feature_names)
 
 X = X / 255.0
 

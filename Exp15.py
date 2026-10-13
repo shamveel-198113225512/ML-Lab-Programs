@@ -38,9 +38,9 @@ for lr in learning_rates:
       acc = accuracy_score(y_test, y_pred)
       result.append([lr, bs, ep, acc])
 
-print("Learning Rates | Epochs | Batch Size | Accuracy")
+print("Learning Rates\tEpochs\tBatch Size\t Accuracy")
 for r in result:
-  print(r[0], "       ", r[1], "       ", r[2], "       ", r[3])
+  print(r[0], r[1], r[2], r[3], sep = "\t")
 
 def printres(x):
   return x[3]
